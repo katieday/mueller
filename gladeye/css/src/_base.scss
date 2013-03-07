@@ -1,0 +1,25 @@
+@import "normalize";
+@import "bootstrap";
+
+
+//
+//HELPER CLASSES
+//
+
+.disabled{cursor:default;}
+.ir { display: block; text-indent: -9999px; overflow: hidden;}
+.ir:before {display: none;}
+.hidden { display: none !important;}
+.invisible { visibility: hidden; display: none;}
+.inline-block{
+  display:inline-block;
+  *display:inline; zoom:1;
+  vertical-align:top;
+  padding-left: 8px;
+}
+.clear {clear: both;}
+.clearfix{@include pie-clearfix;}
+
+*:focus { outline: none; }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
